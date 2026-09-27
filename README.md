@@ -134,16 +134,6 @@ total_cost = round(fuel_cost + tolls, 2)
 
 `origin`, `destination` e `travel_date` são obrigatórios. A data usa `YYYY-MM-DD`; consumo e preço devem ser maiores que zero; pedágios devem ser maiores ou iguais a zero. Falhas de validação retornam `400`. Se o clima estiver indisponível, a viagem continua válida e `weather`/`temperature` ficam nulos.
 
-## Testes locais
-
-Os testes automatizados e a configuração do `pytest` são opcionais e ficam somente no ambiente local. Eles são ignorados pelo Git e não fazem parte da instalação ou da execução exigida pelo projeto.
-
-Para executar os testes localmente, instale o `pytest` no ambiente virtual e execute:
-
-```bash
-pip install pytest
-python -m pytest -q
-```
 
 ## Licença
 
